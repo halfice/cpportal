@@ -1,0 +1,4 @@
+D:\TFS Smart Entity\CitizenPortal\CitizenPortal\obj\Debug\netcoreapp2.2\CitizenPortal.csprojAssemblyReference.cache
+D:\TFS Smart Entity\CitizenPortal\CitizenPortal\obj\Debug\netcoreapp2.2\CitizenPortal.csproj.CoreCompileInputs.cache
+D:\TFS Smart Entity\CitizenPortal\CitizenPortal\obj\Debug\netcoreapp2.2\CitizenPortal.AssemblyInfoInputs.cache
+D:\TFS Smart Entity\CitizenPortal\CitizenPortal\obj\Debug\netcoreapp2.2\CitizenPortal.AssemblyInfo.cs

@@ -1,0 +1,133 @@
+@using CitizenPortal.Models
+
+<script>
+    function addToCart(id) {
+        $.ajax({
+            url: '@Url.Action("Language", "Home")',
+            data: { Lanuguage: id },
+            success: function (data) {
+                loadlanguageviewpask(); 
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                alert(xhr.responseText);
+
+            }
+        });
+    }
+    function SelectedIndexChanged(ddlFruits) {
+            //Form post  
+        var selectedText = ddlFruits.options[ddlFruits.selectedIndex].innerHTML;
+        var selectedValue = ddlFruits.value;
+        if (selectedValue != "0") {
+            addToCart(selectedValue);
+        }
+    } 
+
+    function loadlanguageviewpask() {
+        var someStringValue = '@(ViewBag.LanguageKeyViewModel)';
+       
+        var jsModel = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ViewBag.LanguageKeyViewModel));
+        alert(jsModel);
+            if (jsModel != null) {
+                var LangCheck = "EN";
+                if (jsModel[0]['Englishk'] == null) {
+                    LangCheck = 'AR';
+
+                }
+                if (LangCheck == "EN") {
+                    for (var i = 0; i < jsModel.length; i++) {
+                        var str = jsModel[i]['LanguageKey'];
+                        var Englishstr = jsModel[i]['Englishk'];
+                        document.body.innerHTML = document.body.innerHTML.replace(str, Englishstr );
+
+                    }
+                }
+                if (LangCheck == "AR") {
+                    for (var i = 0; i < jsModel.length; i++) {
+                        var str = jsModel[i]['LanguageKey'];
+                        console.log(jsModel[i]);
+                        var ArabitStr = jsModel[i]['Arabick'];
+                        document.body.innerHTML = document.body.innerHTML.replace(str, ArabitStr);
+
+                    }
+                }
+        }
+    }
+
+</script>
+<div>
+    @{
+        var sessionName = new Byte[20];
+        bool nameOK = Context.Session.TryGetValue("_Language", out sessionName);
+        if (nameOK)
+        {
+            string result = System.Text.Encoding.UTF8.GetString(sessionName);
+            if (result != "EN")
+            {
+                <div style="display:none"><a asp-area="" asp-controller="Home" asp-action="Language">EN</a></div>
+            }
+            else
+            {
+                <div style="display:none"><a asp-area="" asp-controller="Home" asp-action="Language">AR</a></div>
+            }
+        }
+        else
+        {
+           
+            <hr />
+            <div class="container">
+                <div class="row">
+                  
+                        <div class="col-xs-6 col-sm-6 col-md-6"> 
+                        
+                        
+                        
+                        
+                     
+                        
+                        <div class="k-card" style="width: 300px;">
+                            <div class="k-card-body">
+                                <h5 class="k-card-title">Card Title</h5>
+                                <h6 class="k-card-subtitle">Card Subtitle</h6>
+                                <p>Some quick example text to build on the card title and make up the bulk of the card content.</p>
+                            </div>
+                            <div class="k-card-actions">
+                                <span class="k-card-action">
+                                     <a class="btn btn-success" asp-area="" asp-controller="Home" asp-action="Language">EN</a>
+                                </span>
+                                
+                            </div>
+                        </div>
+
+
+
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6">  
+                                                                  <div class="k-card" style="width: 300px;">
+                                                                      <div class="k-card-body">
+                                                                          <h5 class="k-card-title">Card Title</h5>
+                                                                          <h6 class="k-card-subtitle">Card Subtitle</h6>
+                                                                          <p>Some quick example text to build on the card title and make up the bulk of the card content.</p>
+                                                                      </div>
+                                                                      <div class="k-card-actions">
+                                                                          <span class="k-card-action">
+                                                                              <a class="btn btn-success" asp-area="" asp-controller="Home" asp-action="Language">AR</a>
+                                                                          </span>
+                                                                          
+                                                                      </div>
+                                                                  </div>
+                        
+                        
+                        </div>
+                   
+
+                </div>
+
+            </div>
+                      
+
+                        }
+
+                        }
+
+                    </div>

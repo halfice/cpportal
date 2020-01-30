@@ -1,0 +1,15 @@
+D:\TFS Smart Entity\CitizenPortal\CitizenPortal\obj\Debug\netcoreapp2.0\CitizenPortal.Resource.resources
+D:\TFS Smart Entity\CitizenPortal\CitizenPortal\obj\Debug\netcoreapp2.0\CitizenPortal.csproj.GenerateResource.cache
+D:\TFS Smart Entity\CitizenPortal\CitizenPortal\obj\Debug\netcoreapp2.0\CitizenPortal.csproj.CoreCompileInputs.cache
+D:\TFS Smart Entity\CitizenPortal\CitizenPortal\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+D:\TFS Smart Entity\CitizenPortal\CitizenPortal\obj\Debug\netcoreapp2.0\CitizenPortal.AssemblyInfoInputs.cache
+D:\TFS Smart Entity\CitizenPortal\CitizenPortal\obj\Debug\netcoreapp2.0\CitizenPortal.AssemblyInfo.cs
+D:\TFS Smart Entity\CitizenPortal\CitizenPortal\obj\Debug\netcoreapp2.0\CitizenPortal.csprojAssemblyReference.cache
+D:\TFS Smart Entity\CitizenPortal\CitizenPortal\bin\Debug\netcoreapp2.0\appsettings.json
+D:\TFS Smart Entity\CitizenPortal\CitizenPortal\bin\Debug\netcoreapp2.0\CitizenPortal.deps.json
+D:\TFS Smart Entity\CitizenPortal\CitizenPortal\bin\Debug\netcoreapp2.0\CitizenPortal.runtimeconfig.json
+D:\TFS Smart Entity\CitizenPortal\CitizenPortal\bin\Debug\netcoreapp2.0\CitizenPortal.runtimeconfig.dev.json
+D:\TFS Smart Entity\CitizenPortal\CitizenPortal\bin\Debug\netcoreapp2.0\CitizenPortal.dll
+D:\TFS Smart Entity\CitizenPortal\CitizenPortal\bin\Debug\netcoreapp2.0\CitizenPortal.pdb
+D:\TFS Smart Entity\CitizenPortal\CitizenPortal\obj\Debug\netcoreapp2.0\CitizenPortal.dll
+D:\TFS Smart Entity\CitizenPortal\CitizenPortal\obj\Debug\netcoreapp2.0\CitizenPortal.pdb

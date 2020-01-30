@@ -1,0 +1,48 @@
+@using CitizenPortal.Models
+
+
+
+<div>
+    @{
+        var sessionName = new Byte[20];
+        bool nameOK = Context.Session.TryGetValue("_UserName", out sessionName);
+        if (nameOK)
+        {
+            string result = System.Text.Encoding.UTF8.GetString(sessionName);
+            <div style="color:white"> <a>@result</a>  </div>
+        }
+        else
+        {<hr />
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+
+                        <div class="k-card" style="width: 300px;">
+                            <div class="k-card-body">
+                                <h5 class="k-card-title">Card Title</h5>
+                                <h6 class="k-card-subtitle">Card Subtitle</h6>
+                                <p>Some quick example text to build on the card title and make up the bulk of the card content.</p>
+                            </div>
+                            <div class="k-card-actions">
+                                <span class="k-card-action">
+                                    <a asp-area="" class="btn btn-success" asp-controller="Account" asp-action="Login">loginCP</a>
+                                </span>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        }
+    }
+</div>
+
